@@ -1,12 +1,13 @@
+import time
 
 class GPUModel():
-    def __init__(self, gpu_core, gpu_memory, gpu_vrm_core, gpu_hot_spot, created_at, hour_at, pc_id):
+    def __init__(self, gpu_core, gpu_memory, gpu_vrm_core, gpu_hot_spot, pc_id):
         self._gpu_core = gpu_core
         self._gpu_memory = gpu_memory
         self._gpu_vrm_core = gpu_vrm_core
         self._gpu_hot_spot = gpu_hot_spot
-        self._created_at = created_at
-        self._hour_at = hour_at
+        self._created_at = time.strftime('%Y-%m-%d')
+        self._hour_at = time.strftime('%H:%M:%S')
         self._pc_id = pc_id
 
     @property

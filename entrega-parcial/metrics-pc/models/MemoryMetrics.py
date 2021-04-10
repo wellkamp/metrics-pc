@@ -2,13 +2,13 @@ import time
 
 
 class MemoryMetrics():
-    def __init__(self, percent, available, total):
+    def __init__(self, percent, available, total, pc_id):
         self._percent = percent
         self._available = available
         self._total = total
         self._created_at = time.strftime('%Y-%m-%d')
         self._hour_at = time.strftime('%H:%M:%S')
-        self._pc_id = 1
+        self._pc_id = pc_id
 
     @property
     def percent(self):
