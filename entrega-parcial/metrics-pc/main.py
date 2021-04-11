@@ -9,7 +9,7 @@ import time
 
 
 def main():
-    gpu_metrics = GPUMetrics(r'diretorio')
+    gpu_metrics = GPUMetrics(r'C:\Users\PICHAU\Desktop\Trabalho Topicos Especiais\entrega-parcial\metrics-pc\helpers\OpenHardwareMonitorLib.dll')
     print('Script Rodando....')
     while True:
         try:

@@ -12,11 +12,11 @@ class MemoryMetrics():
 
     @property
     def percent(self):
-        return f'{self._percent}'
+        return self._percent
 
     @property
     def available(self):
-        return f'{(self._available * 100 / self._total):.1f}'
+        return round(self._available * 100 / self._total, 1)
 
     @property
     def created_at(self):

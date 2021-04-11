@@ -2,10 +2,10 @@ import time
 
 class GPUModel():
     def __init__(self, gpu_core, gpu_memory, gpu_vrm_core, gpu_hot_spot, pc_id):
-        self._gpu_core = gpu_core
-        self._gpu_memory = gpu_memory
-        self._gpu_vrm_core = gpu_vrm_core
-        self._gpu_hot_spot = gpu_hot_spot
+        self._gpu_core = float(gpu_core)
+        self._gpu_memory = float(gpu_memory)
+        self._gpu_vrm_core = float(gpu_vrm_core)
+        self._gpu_hot_spot = float(gpu_hot_spot)
         self._created_at = time.strftime('%Y-%m-%d')
         self._hour_at = time.strftime('%H:%M:%S')
         self._pc_id = pc_id
